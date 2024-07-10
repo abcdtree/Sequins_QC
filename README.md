@@ -6,6 +6,16 @@ cDNA/dRNA transcriptomics Inner sequence Quality Control with Sequins
 
 ## Installation
 ### environment
+```
+conda create -n sequins_qc mamba
+conda activate sequins_qc
+mamba install minimap2 samtools isoquant salmon pandas
+```
+or
+```
+conda create -y env.yml #in the github repository
+conda activate sequins_qc
+```
 
 ### install
 ```
