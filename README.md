@@ -49,8 +49,8 @@ sequins_qc -r1 ont.fastq.gz --ont
 
 ## Output
 In the `work_dir` you set as the parameter or your running folder by defaul, there will be `summary` folder contains all the reports.
-**{prefix}.mapping.stats** contains status on how many reads in the fastq file aligned to sequins reference
-**pearson_correlation.csv** and **spearman_correlation.csv** will record the correlation matrix between sequins Truth and quantification result from the reads you provided.
+- **{prefix}.mapping.stats** contains status on how many reads in the fastq file aligned to sequins reference
+- **pearson_correlation.csv** and **spearman_correlation.csv** will record the correlation matrix between sequins Truth and quantification result from the reads you provided.
 *we found pearson correlation will be a better one to check*
 
 ## Author
