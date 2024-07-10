@@ -44,5 +44,5 @@ In the `work_dir` you set as the parameter or your running folder by defaul, the
 *we found pearson correlation will be a better one to check*
 
 ## Author
-Josh Zhang
-email: josh.zhang@unimelb.edu.au
+- Josh Zhang
+- email: josh.zhang@unimelb.edu.au
