@@ -5,7 +5,8 @@ import pathlib
 here = pathlib.Path(__file__).parent.resolve()
 
 # Get the long description from the README file
-long_description = ("README.md").read_text(encoding="utf-8")
+#long_description = ("README.md").read_text(encoding="utf-8")
+long_description=""
 
 # Arguments marked as "Required" below must be included for upload to PyPI.
 # Fields marked as "Optional" may be commented out.
@@ -98,7 +99,7 @@ setup(
     keywords="sequins, transcriptomics, QC",  # Optional
     # When your source code is in a subdirectory under the project root, e.g.
     # `src/`, it is necessary to specify the `package_dir` argument.
-    package_dir={"": "src"},  # Optional
+    #package_dir={"": "src"},  # Optional
     # You can just specify package directories manually here if your project is
     # simple. Or you can use find_packages().
     #
@@ -108,7 +109,7 @@ setup(
     #
     #   py_modules=["my_module"],
     #
-    packages=find_packages(where="src"),  # Required
+    packages=find_packages(exclude=["contrib", "docs", "tests"]),  # Required
     # Specify which Python versions you support. In contrast to the
     # 'Programming Language' classifiers above, 'pip install' will check this
     # and refuse to install the project if the version does not match. See
@@ -134,13 +135,13 @@ setup(
     # If there are data files included in your packages that need to be
     # installed, specify them here.
     package_data={  # Optional
-        "data": ["rnasequin_sequences_2.4.fa","rnasequin_decoychr_2.4.fa", "rnasequin_annotation_2.4.gtf"],
+        "sequins_qc": ["data/*"],
     },
     # Entry points. The following would provide a command called `sample` which
     # executes the function `main` from this package when invoked:
     entry_points={  # Optional
         "console_scripts": [
-            "sequins_qc=main:main",
+            "sequins_qc=sequins_qc.main:main",
         ],
     },
     # List additional URLs that are relevant to your project as a dict.

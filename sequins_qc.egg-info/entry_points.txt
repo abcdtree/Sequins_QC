@@ -1,0 +1,2 @@
+[console_scripts]
+sequins_qc = sequins_qc.main:main

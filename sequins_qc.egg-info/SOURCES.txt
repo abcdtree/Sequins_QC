@@ -1,0 +1,13 @@
+README.md
+setup.py
+sequins_qc/__init__.py
+sequins_qc/main.py
+sequins_qc.egg-info/PKG-INFO
+sequins_qc.egg-info/SOURCES.txt
+sequins_qc.egg-info/dependency_links.txt
+sequins_qc.egg-info/entry_points.txt
+sequins_qc.egg-info/top_level.txt
+sequins_qc/data/rnasequin_annotation_2.4.gtf
+sequins_qc/data/rnasequin_decoychr_2.4.fa
+sequins_qc/data/rnasequin_sequences_2.4.fa
+sequins_qc/data/sequin_expression.tab
